@@ -45,7 +45,7 @@ app.post("/", async (req, res, next) => {//Post needs to be the same as the file
         });
         const result = await data.save();
         res.redirect("newPage.html");
-        console.log("result");
+        console.log(result);
     } catch (err) {
         console.log("Error")
         return next(err);
