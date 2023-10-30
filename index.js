@@ -37,7 +37,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.post("/", async (req, res, next) => {
+app.post("/", async (req, res, next) => {//Post needs to be the same as the file page location
     try {
         const data = new DataModel({
             firstName: req.body.firstName,
